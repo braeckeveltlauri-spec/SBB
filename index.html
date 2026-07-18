@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SBB</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#eef5ff;
+    text-align:center;
+    padding:40px;
+}
+
+#content{
+    display:none;
+}
+
+button{
+    padding:10px 20px;
+    background:#005ca9;
+    color:white;
+    border:none;
+    border-radius:8px;
+}
+
+.message{
+    background:white;
+    max-width:600px;
+    margin:20px auto;
+    padding:20px;
+    border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="login">
+
+<h1>SBB</h1>
+
+<p>Voer de geheime code in</p>
+
+<input type="password" id="code">
+
+<br><br>
+
+<button onclick="openSite()">Openen</button>
+
+</div>
+
+<div id="content">
+
+<h1>SBB</h1>
+
+<div class="message">
+<h3>Hopeloos verliefd sinds 5 januari 2026</h3>
+<p>Welkom op ONZE pagina </p>
+</div>
+
+<div class="message">
+<h3>18 juli 2026</h3>
+<p>
+Als je dit leest, wil ik dat je weet dat ik aan je denk.
+Waar je ook bent, je bent belangrijk voor mij. ❤️
+</p>
+</div>
+
+
+<div class="message">
+<h3>19 juli 2026</h3>
+<p>I'm falling
+In all the good times, I find myself longing for change
+And in the bad times, I fear myself
+I'm off the deep end, watch as I dive in
+I'll never meet the ground
+Crash through the surface, where they can't hurt us
+We're far from the shallow now.</p>
+</div>
+
+<script>
+function openSite(){
+
+if(document.getElementById("code").value==="050126"){
+
+document.getElementById("login").style.display="none";
+document.getElementById("content").style.display="block";
+
+}else{
+
+alert("Verkeerde code");
+
+}
+
+}
+</script>
+
+</body>
+</html>
