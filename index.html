@@ -216,14 +216,75 @@ button:hover{
 </div>
 
 <script>
-function openSite(){
-    if(document.getElementById("code").value === "050126"){
+
+function openSite() {
+
+    if (document.getElementById("code").value === "050126") {
+
         document.getElementById("login").style.display = "none";
         document.getElementById("content").style.display = "block";
+
+        startExtras();
+
     } else {
+
         alert("Verkeerde code");
+
     }
 }
+
+function startExtras() {
+
+    const dagen = [
+        "Zondag",
+        "Maandag",
+        "Dinsdag",
+        "Woensdag",
+        "Donderdag",
+        "Vrijdag",
+        "Zaterdag"
+    ];
+
+    const vandaag = new Date();
+
+    document.getElementById("today").innerHTML =
+        "📅 Vandaag is het " +
+        dagen[vandaag.getDay()];
+
+
+
+    const songs = [
+        "Lady Gaga - Shallow",
+        "Ed Sheeran - Perfect",
+        "Lewis Capaldi - Someone You Loved",
+        "Bruno Mars - Just The Way You Are",
+        "Adele - Make You Feel My Love"
+    ];
+
+    const songOfTheDay =
+        songs[vandaag.getDate() % songs.length];
+
+    document.getElementById("song").innerHTML =
+        songOfTheDay;
+
+
+
+    const targetDate =
+        new Date("2026-08-01");
+
+    const difference =
+        targetDate - vandaag;
+
+    const days =
+        Math.floor(
+            difference /
+            (1000 * 60 * 60 * 24)
+        );
+
+    document.getElementById("countdown").innerHTML =
+        days + " dagen te gaan ❤️";
+}
+
 </script>
 
 </body>
