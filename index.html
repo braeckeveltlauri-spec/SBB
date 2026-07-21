@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SBB ❤️</title>
+<title>SBB </title>
 
 <style>
-
 body{
     margin:0;
     font-family:'Segoe UI',sans-serif;
@@ -15,16 +14,15 @@ body{
     min-height:100vh;
     text-align:center;
     padding:30px;
+    box-sizing:border-box;
 }
 
 h1{
     color:white;
-    margin-bottom:10px;
 }
 
 .subtitle{
     color:white;
-    font-size:18px;
     margin-bottom:40px;
 }
 
@@ -42,13 +40,11 @@ input{
 
 button{
     padding:12px 25px;
-    font-size:16px;
     background:#005ca9;
     color:white;
     border:none;
     border-radius:10px;
     cursor:pointer;
-    transition:0.3s;
 }
 
 button:hover{
@@ -65,10 +61,10 @@ button:hover{
     content:"";
     position:absolute;
     left:50%;
-    width:4px;
-    background:white;
     top:0;
     bottom:0;
+    width:4px;
+    background:white;
     transform:translateX(-50%);
 }
 
@@ -81,14 +77,13 @@ button:hover{
     content:"";
     position:absolute;
     left:50%;
-    top:20px;
+    top:15px;
     width:18px;
     height:18px;
     background:#005ca9;
     border:4px solid white;
     border-radius:50%;
     transform:translateX(-50%);
-    z-index:2;
 }
 
 .date{
@@ -102,7 +97,7 @@ button:hover{
     width:40%;
     padding:20px;
     border-radius:16px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
     line-height:1.6;
 }
 
@@ -114,7 +109,7 @@ button:hover{
     margin-left:auto;
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .timeline::before{
     left:20px;
@@ -125,7 +120,7 @@ button:hover{
 }
 
 .card{
-    width:calc(100% - 60px);
+    width:calc(100% - 70px);
     margin-left:50px !important;
 }
 
@@ -135,7 +130,6 @@ button:hover{
 }
 
 }
-
 </style>
 </head>
 
@@ -179,12 +173,12 @@ button:hover{
             <div class="date">19 juli 2026</div>
             <div class="card">
                 I'm falling<br><br>
-                In all the good times, I find myself longing for change
-                And in the bad times, I fear myself
-                <br><br>
-                I'm off the deep end, watch as I dive in
-                I'll never meet the ground
-                Crash through the surface, where they can't hurt us
+                In all the good times, I find myself longing for change.<br>
+                And in the bad times, I fear myself.<br><br>
+
+                I'm off the deep end, watch as I dive in.<br>
+                I'll never meet the ground.<br>
+                Crash through the surface, where they can't hurt us.<br>
                 We're far from the shallow now.
             </div>
         </div>
@@ -192,4 +186,45 @@ button:hover{
         <div class="entry">
             <div class="date">20 juli 2026</div>
             <div class="card">
+                En daar was je dan, even maar... net lang genoeg om mijn dag beter te maken
+                en net kort genoeg om ervoor te zorgen dat ik je nu alweer mis.
+                Ik had je vandaag graag wat langer geleend van de wereld.
+                Dat anderhalf uur was veel te leuk om je daarna alweer te moeten laten gaan.
+                Maar goed... dat geeft me tenminste een excuus om snel weer naar je uit te kijken. 😘✨
+            </div>
+        </div>
 
+        <div class="entry">
+            <div class="date">21 juli 2026</div>
+            <div class="card">
+                Mijn liefste, ook al hebben we elkaar vandaag alleen via een scherm gehoord,
+                toch voelde je dichtbij. Het blijft bijzonder hoe een paar woorden van jou
+                mijn dag meteen mooier maken.
+
+                Natuurlijk had ik je liever vastgehouden dan een berichtje gestuurd,
+                maar ik ben dankbaar voor elk moment dat ik iets van je hoor.
+
+                Jij blijft mijn favoriete deel van elke dag. 💕😘
+
+                Ik mis je, maar ik draag je de hele dag met me mee,
+                in elke glimlach en in elke gedachte. ❤️
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function openSite(){
+    if(document.getElementById("code").value === "050126"){
+        document.getElementById("login").style.display = "none";
+        document.getElementById("content").style.display = "block";
+    } else {
+        alert("Verkeerde code");
+    }
+}
+</script>
+
+</body>
+</html>
